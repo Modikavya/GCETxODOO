@@ -942,7 +942,6 @@
                 return;
             }
 
-            // Collect registration data
             const registrationData = {
                 employeeId: document.getElementById('employeeId').value,
                 fullName: document.getElementById('fullName').value,
