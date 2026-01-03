@@ -20,17 +20,17 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 30px 15px;
+            padding: 2vh 2vw;
         }
 
         .auth-container {
             display: flex;
-            width: 100%;
+            width: 90vw;
             max-width: 1000px;
-            min-height: 600px;
+            min-height: 75vh;
             background: white;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            border-radius: 8px;
+            box-shadow: 0 0.5vh 2.5vh rgba(0, 0, 0, 0.08);
+            border-radius: 0.8vh;
             overflow: hidden;
         }
 
@@ -42,7 +42,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 60px 40px;
+            padding: 6vh 4vw;
             position: relative;
         }
 
@@ -51,20 +51,20 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 20px;
+            gap: 2vh;
         }
 
         .logo-text {
             color: white;
-            font-size: 40px;
+            font-size: clamp(1.2rem, 3vw, 2.5rem);
             font-weight: 700;
-            letter-spacing: 8px;
+            letter-spacing: 0.5vw;
             text-align: center;
         }
 
         .logo-icon {
-            width: 80px;
-            height: 80px;
+            width: clamp(50px, 6vw, 80px);
+            height: clamp(50px, 6vw, 80px);
             position: relative;
             display: flex;
             align-items: center;
@@ -72,8 +72,8 @@
         }
 
         .hexagon {
-            width: 80px;
-            height: 80px;
+            width: 100%;
+            height: 100%;
             background: white;
             clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
             display: flex;
@@ -82,8 +82,8 @@
         }
 
         .hexagon-inner {
-            width: 66px;
-            height: 66px;
+            width: 82%;
+            height: 82%;
             background: #0a1f44;
             clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
         }
@@ -91,7 +91,7 @@
         /* Right Panel - Form Section */
         .auth-right {
             flex: 0 0 55%;
-            padding: 40px 60px;
+            padding: 4vh 5vw;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -101,43 +101,43 @@
 
         .auth-title {
             text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: 1vh;
         }
 
         .auth-title h1 {
-            font-size: 36px;
+            font-size: clamp(1.5rem, 3vw, 2.25rem);
             font-weight: 700;
             color: #0a1f44;
             margin: 0;
-            letter-spacing: -0.5px;
+            letter-spacing: -0.03vw;
         }
 
         .auth-subtitle {
             text-align: center;
             color: #6c757d;
-            font-size: 14px;
-            margin-bottom: 30px;
+            font-size: clamp(0.75rem, 1.2vw, 0.875rem);
+            margin-bottom: 3vh;
             font-weight: 400;
         }
 
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 2vh;
         }
 
         .form-label {
             display: block;
             color: #2c3e50;
             font-weight: 600;
-            margin-bottom: 7px;
-            font-size: 13px;
+            margin-bottom: 0.7vh;
+            font-size: clamp(0.7rem, 1.1vw, 0.813rem);
         }
 
         .form-control {
             width: 100%;
-            padding: 12px 15px;
+            padding: 1.2vh 1.5vw;
             border: 1px solid #ced4da;
-            border-radius: 4px;
-            font-size: 14px;
+            border-radius: 0.4vh;
+            font-size: clamp(0.75rem, 1.2vw, 0.875rem);
             transition: all 0.3s ease;
             background: white;
             color: #495057;
@@ -146,7 +146,7 @@
         .form-control:focus {
             outline: none;
             border-color: #2d4a7c;
-            box-shadow: 0 0 0 3px rgba(45, 74, 124, 0.08);
+            box-shadow: 0 0 0 0.3vh rgba(45, 74, 124, 0.08);
         }
 
         .input-wrapper {
@@ -154,17 +154,17 @@
         }
 
         .input-wrapper .form-control {
-            padding-right: 45px;
+            padding-right: 4vw;
         }
 
         .password-toggle {
             position: absolute;
-            right: 16px;
+            right: 1.5vw;
             top: 50%;
             transform: translateY(-50%);
             color: #6c757d;
             cursor: pointer;
-            font-size: 15px;
+            font-size: clamp(0.8rem, 1.3vw, 0.938rem);
             transition: color 0.2s ease;
         }
 
@@ -174,13 +174,13 @@
 
         .forgot-link {
             text-align: right;
-            margin-top: 8px;
+            margin-top: 0.8vh;
         }
 
         .forgot-link a {
             color: #2d4a7c;
             text-decoration: none;
-            font-size: 13px;
+            font-size: clamp(0.7rem, 1.1vw, 0.813rem);
             font-weight: 500;
             transition: color 0.2s ease;
         }
@@ -193,20 +193,42 @@
         .remember-me {
             display: flex;
             align-items: center;
-            gap: 10px;
-            margin-bottom: 24px;
+            gap: 1vw;
+            margin-bottom: 2.4vh;
         }
 
         .remember-me input[type="checkbox"] {
-            width: 17px;
-            height: 17px;
+            width: 1.7vh;
+            height: 1.7vh;
             cursor: pointer;
             accent-color: #2d4a7c;
         }
 
         .remember-me label {
             color: #495057;
-            font-size: 13px;
+            font-size: clamp(0.7rem, 1.1vw, 0.813rem);
+            cursor: pointer;
+            margin: 0;
+            user-select: none;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            gap: 1vw;
+            margin-bottom: 2.4vh;
+        }
+
+        .remember-me input[type="checkbox"] {
+            width: 1.7vh;
+            height: 1.7vh;
+            cursor: pointer;
+            accent-color: #2d4a7c;
+        }
+
+        .remember-me label {
+            color: #495057;
+            font-size: clamp(0.7rem, 1.1vw, 0.813rem);
             cursor: pointer;
             margin: 0;
             user-select: none;
@@ -214,34 +236,84 @@
 
         .btn-submit {
             width: 100%;
-            padding: 13px;
+            padding: 1.3vh 0;
             background: #2d4a7c;
             color: white;
             border: none;
-            border-radius: 4px;
-            font-size: 15px;
+            border-radius: 0.4vh;
+            font-size: clamp(0.8rem, 1.3vw, 0.938rem);
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
-            margin-bottom: 18px;
-            letter-spacing: 0.3px;
+            margin-bottom: 1.8vh;
+            letter-spacing: 0.03vw;
         }
 
         .btn-submit:hover {
             background: #1e3558;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(45, 74, 124, 0.25);
+            transform: translateY(-0.1vh);
+            box-shadow: 0 0.4vh 1.2vh rgba(45, 74, 124, 0.25);
         }
 
         .btn-submit:active {
             transform: translateY(0);
         }
 
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 2vh 0;
+            color: #6c757d;
+            font-size: clamp(0.7rem, 1.1vw, 0.813rem);
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .divider span {
+            padding: 0 1.5vw;
+            font-weight: 500;
+        }
+
+        .btn-google {
+            width: 100%;
+            padding: 1.2vh 0;
+            background: white;
+            color: #444;
+            border: 1px solid #dadce0;
+            border-radius: 0.4vh;
+            font-size: clamp(0.8rem, 1.3vw, 0.938rem);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1vw;
+            margin-bottom: 1.5vh;
+        }
+
+        .btn-google:hover {
+            background: #f8f9fa;
+            border-color: #c6c6c6;
+            box-shadow: 0 0.1vh 0.3vh rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-google svg {
+            width: clamp(16px, 1.5vw, 18px);
+            height: clamp(16px, 1.5vw, 18px);
+        }
+
         .auth-footer {
             text-align: center;
             color: #6c757d;
-            font-size: 13px;
-            padding-top: 8px;
+            font-size: clamp(0.7rem, 1.1vw, 0.813rem);
+            padding-top: 0.8vh;
         }
 
         .auth-footer a {
@@ -265,27 +337,27 @@
         .step-indicator {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 30px;
+            margin-bottom: 3vh;
             position: relative;
-            padding: 0 20px;
+            padding: 0 2vw;
         }
 
         .step-indicator::before {
             content: '';
             position: absolute;
-            top: 18px;
-            left: 20%;
-            right: 20%;
-            height: 2px;
+            top: 1.8vh;
+            left: 25%;
+            right: 25%;
+            height: 0.2vh;
             background: #dee2e6;
             z-index: 0;
         }
 
         .progress-line {
             position: absolute;
-            top: 18px;
-            left: 20%;
-            height: 2px;
+            top: 1.8vh;
+            left: 25%;
+            height: 0.2vh;
             background: #2d4a7c;
             transition: width 0.4s ease;
             z-index: 1;
@@ -299,26 +371,26 @@
         }
 
         .step-circle {
-            width: 36px;
-            height: 36px;
+            width: 3.6vh;
+            height: 3.6vh;
             border-radius: 50%;
             background: white;
-            border: 2px solid #dee2e6;
+            border: 0.2vh solid #dee2e6;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 6px;
+            margin: 0 auto 0.6vh;
             font-weight: 600;
             color: #adb5bd;
             transition: all 0.3s ease;
-            font-size: 14px;
+            font-size: clamp(0.75rem, 1.2vw, 0.875rem);
         }
 
         .step-item.active .step-circle {
             border-color: #2d4a7c;
             background: #2d4a7c;
             color: white;
-            box-shadow: 0 2px 8px rgba(45, 74, 124, 0.3);
+            box-shadow: 0 0.2vh 0.8vh rgba(45, 74, 124, 0.3);
         }
 
         .step-item.completed .step-circle {
@@ -328,7 +400,7 @@
         }
 
         .step-name {
-            font-size: 11px;
+            font-size: clamp(0.6rem, 1vw, 0.688rem);
             color: #6c757d;
             font-weight: 500;
         }
@@ -348,18 +420,18 @@
 
         .navigation-buttons {
             display: flex;
-            gap: 12px;
-            margin-top: 24px;
+            gap: 1.2vw;
+            margin-top: 2.4vh;
         }
 
         .btn-back {
             flex: 1;
-            padding: 13px;
+            padding: 1.3vh 0;
             background: #f8f9fa;
             color: #495057;
             border: 1px solid #dee2e6;
-            border-radius: 4px;
-            font-size: 14px;
+            border-radius: 0.4vh;
+            font-size: clamp(0.75rem, 1.2vw, 0.875rem);
             font-weight: 600;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -372,12 +444,12 @@
 
         .btn-next {
             flex: 1;
-            padding: 13px;
+            padding: 1.3vh 0;
             background: #2d4a7c;
             color: white;
             border: none;
-            border-radius: 4px;
-            font-size: 14px;
+            border-radius: 0.4vh;
+            font-size: clamp(0.75rem, 1.2vw, 0.875rem);
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -385,8 +457,8 @@
 
         .btn-next:hover {
             background: #1e3558;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(45, 74, 124, 0.25);
+            transform: translateY(-0.1vh);
+            box-shadow: 0 0.4vh 1.2vh rgba(45, 74, 124, 0.25);
         }
 
         .btn-next:active {
@@ -398,15 +470,15 @@
             appearance: none;
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23495057' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
             background-repeat: no-repeat;
-            background-position: right 16px center;
-            padding-right: 40px;
+            background-position: right 1.5vw center;
+            padding-right: 4vw;
         }
 
         .password-strength {
-            height: 5px;
-            margin-top: 8px;
+            height: 0.5vh;
+            margin-top: 0.8vh;
             background: #e9ecef;
-            border-radius: 3px;
+            border-radius: 0.3vh;
             overflow: hidden;
         }
 
@@ -414,7 +486,7 @@
             height: 100%;
             width: 0;
             transition: all 0.3s ease;
-            border-radius: 3px;
+            border-radius: 0.3vh;
         }
 
         .weak { background: linear-gradient(to right, #dc3545, #e35d6a); width: 33%; }
@@ -424,205 +496,131 @@
         /* Tablet Responsive */
         @media (max-width: 1024px) {
             .auth-container {
-                max-width: 900px;
+                width: 92vw;
             }
 
             .auth-right {
-                padding: 40px 45px;
-            }
-
-            .logo-text {
-                font-size: 36px;
-                letter-spacing: 6px;
-            }
-
-            .logo-icon {
-                width: 70px;
-                height: 70px;
-            }
-
-            .hexagon {
-                width: 70px;
-                height: 70px;
-            }
-
-            .hexagon-inner {
-                width: 58px;
-                height: 58px;
-            }
-
-            .auth-title h1 {
-                font-size: 32px;
+                padding: 4vh 4vw;
             }
         }
 
         /* Mobile Responsive */
         @media (max-width: 768px) {
             body {
-                padding: 15px;
+                padding: 1.5vh 2vw;
             }
 
             .auth-container {
                 flex-direction: column;
                 min-height: auto;
-                border-radius: 6px;
-                max-width: 100%;
+                width: 95vw;
             }
 
             .auth-left {
                 flex: 0 0 auto;
-                padding: 35px 25px;
-                min-height: 200px;
+                padding: 4vh 3vw;
+                min-height: 20vh;
             }
 
             .logo-wrapper {
-                gap: 15px;
+                gap: 1.5vh;
             }
 
             .logo-text {
-                font-size: 28px;
-                letter-spacing: 5px;
-            }
-
-            .logo-icon {
-                width: 60px;
-                height: 60px;
-            }
-
-            .hexagon {
-                width: 60px;
-                height: 60px;
-            }
-
-            .hexagon-inner {
-                width: 50px;
-                height: 50px;
+                letter-spacing: 0.4vw;
             }
 
             .auth-right {
                 flex: 0 0 auto;
-                padding: 35px 30px;
-            }
-
-            .auth-title h1 {
-                font-size: 28px;
-            }
-
-            .auth-subtitle {
-                font-size: 13px;
-                margin-bottom: 25px;
+                padding: 4vh 5vw;
             }
 
             .form-group {
-                margin-bottom: 18px;
+                margin-bottom: 1.8vh;
             }
 
             .step-indicator {
-                padding: 0 10px;
-                margin-bottom: 25px;
+                padding: 0 1vw;
+                margin-bottom: 2.5vh;
             }
 
             .step-indicator::before {
-                left: 18%;
-                right: 18%;
-                top: 16px;
+                left: 20%;
+                right: 20%;
+                top: 1.6vh;
             }
 
             .progress-line {
-                left: 18%;
-                top: 16px;
+                left: 20%;
+                top: 1.6vh;
             }
 
             .step-circle {
-                width: 32px;
-                height: 32px;
-                font-size: 13px;
+                width: 3.2vh;
+                height: 3.2vh;
             }
 
-            .step-name {
-                font-size: 10px;
-            }
-
-            .btn-submit, .btn-next, .btn-back {
-                padding: 12px;
-                font-size: 14px;
+            .navigation-buttons {
+                gap: 2vw;
             }
         }
 
         @media (max-width: 480px) {
             body {
-                padding: 10px;
+                padding: 1vh 2vw;
             }
 
             .auth-left {
-                padding: 30px 20px;
-                min-height: 160px;
+                padding: 3vh 3vw;
+                min-height: 16vh;
             }
 
             .logo-wrapper {
-                gap: 12px;
+                gap: 1.2vh;
             }
 
             .logo-text {
-                font-size: 22px;
-                letter-spacing: 3px;
-            }
-
-            .logo-icon {
-                width: 50px;
-                height: 50px;
-            }
-
-            .hexagon {
-                width: 50px;
-                height: 50px;
-            }
-
-            .hexagon-inner {
-                width: 42px;
-                height: 42px;
+                letter-spacing: 0.3vw;
             }
 
             .auth-right {
-                padding: 28px 22px;
-            }
-
-            .auth-title h1 {
-                font-size: 24px;
+                padding: 3vh 5vw;
             }
 
             .auth-subtitle {
-                font-size: 12px;
-                margin-bottom: 22px;
+                margin-bottom: 2.5vh;
             }
 
             .form-control {
-                padding: 11px 13px;
-                font-size: 13px;
+                padding: 1.1vh 3vw;
             }
 
-            .form-label {
-                font-size: 12px;
+            .input-wrapper .form-control {
+                padding-right: 10vw;
+            }
+
+            .password-toggle {
+                right: 3vw;
             }
 
             .step-indicator {
-                padding: 0 5px;
-                margin-bottom: 22px;
+                padding: 0 1vw;
+                margin-bottom: 2.2vh;
             }
 
             .step-circle {
-                width: 28px;
-                height: 28px;
-                font-size: 12px;
-            }
-
-            .step-name {
-                font-size: 9px;
+                width: 2.8vh;
+                height: 2.8vh;
             }
 
             .navigation-buttons {
-                gap: 10px;
-                margin-top: 20px;
+                gap: 2.5vw;
+                margin-top: 2vh;
+            }
+
+            select.form-control {
+                background-position: right 3vw center;
+                padding-right: 10vw;
             }
         }
     </style>
@@ -630,7 +628,7 @@
 <body>
     <!-- Login Form -->
     <div id="loginForm" class="auth-container">
-          <div class="auth-left">
+        <div class="auth-left">
             <div class="logo-wrapper">
                 <span class="logo-text">HUMAN RESOURCES</span>
                 <div class="logo-icon">
@@ -640,7 +638,6 @@
                 </div>
                 <span class="logo-text">MANAGEMENT</span>
             </div>
-        
         </div>
         <div class="auth-right">
             <div class="auth-title">
@@ -664,11 +661,21 @@
                         <a href="#" onclick="showForgotPassword(event)">Forgot Password?</a>
                     </div>
                 </div>
-                <div class="remember-me">
-                    <input type="checkbox" id="rememberMe">
-                    <label for="rememberMe">Remember me</label>
-                </div>
                 <button type="submit" class="btn-submit">Login</button>
+                
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+                
+                <button type="button" class="btn-google" onclick="googleAuth()">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.64 9.20443C17.64 8.56625 17.5827 7.95262 17.4764 7.36353H9V10.8449H13.8436C13.635 11.9699 13.0009 12.9231 12.0477 13.5613V15.8194H14.9564C16.6582 14.2526 17.64 11.9453 17.64 9.20443Z" fill="#4285F4"/>
+                        <path d="M8.99976 18C11.4298 18 13.467 17.1941 14.9561 15.8195L12.0475 13.5613C11.2416 14.1013 10.2107 14.4204 8.99976 14.4204C6.65567 14.4204 4.67158 12.8372 3.96385 10.71H0.957031V13.0418C2.43794 15.9831 5.48158 18 8.99976 18Z" fill="#34A853"/>
+                        <path d="M3.96409 10.7098C3.78409 10.1698 3.68182 9.59301 3.68182 8.99983C3.68182 8.40665 3.78409 7.82983 3.96409 7.28983V4.95801H0.957273C0.347727 6.17301 0 7.54755 0 8.99983C0 10.4521 0.347727 11.8266 0.957273 13.0416L3.96409 10.7098Z" fill="#FBBC05"/>
+                        <path d="M8.99976 3.57955C10.3211 3.57955 11.5075 4.03364 12.4402 4.92545L15.0216 2.34409C13.4629 0.891818 11.4257 0 8.99976 0C5.48158 0 2.43794 2.01682 0.957031 4.95818L3.96385 7.29C4.67158 5.16273 6.65567 3.57955 8.99976 3.57955Z" fill="#EA4335"/>
+                    </svg>
+                    Continue with Google
+                </button>
             </form>
             <div class="auth-footer">
                 Don't have an account? <a onclick="switchToSignup()">Sign Up</a>
@@ -729,6 +736,10 @@
                         <label class="form-label">Email Address</label>
                         <input type="email" id="signupEmail" class="form-control" placeholder="Enter your email" required>
                     </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number" required>
+                    </div>
                 </div>
 
                 <!-- Step 2: Account Security -->
@@ -750,22 +761,10 @@
                             <i class="fas fa-eye password-toggle" onclick="togglePassword('confirmPassword', this)"></i>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label">Phone Number</label>
-                        <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number" required>
-                    </div>
                 </div>
 
                 <!-- Step 3: Professional Details -->
                 <div class="signup-step" data-step="3">
-                    <div class="form-group">
-                        <label class="form-label">Role</label>
-                        <select class="form-control" id="role" required>
-                            <option value="">Select your role</option>
-                            <option value="employee">Employee</option>
-                            <option value="hr">HR</option>
-                        </select>
-                    </div>
                     <div class="form-group">
                         <label class="form-label">Department</label>
                         <select class="form-control" id="department" required>
@@ -800,6 +799,20 @@
                         <i class="fas fa-check"></i> Create Account
                     </button>
                 </div>
+                
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+                
+                <button type="button" class="btn-google" onclick="googleAuth()">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.64 9.20443C17.64 8.56625 17.5827 7.95262 17.4764 7.36353H9V10.8449H13.8436C13.635 11.9699 13.0009 12.9231 12.0477 13.5613V15.8194H14.9564C16.6582 14.2526 17.64 11.9453 17.64 9.20443Z" fill="#4285F4"/>
+                        <path d="M8.99976 18C11.4298 18 13.467 17.1941 14.9561 15.8195L12.0475 13.5613C11.2416 14.1013 10.2107 14.4204 8.99976 14.4204C6.65567 14.4204 4.67158 12.8372 3.96385 10.71H0.957031V13.0418C2.43794 15.9831 5.48158 18 8.99976 18Z" fill="#34A853"/>
+                        <path d="M3.96409 10.7098C3.78409 10.1698 3.68182 9.59301 3.68182 8.99983C3.68182 8.40665 3.78409 7.82983 3.96409 7.28983V4.95801H0.957273C0.347727 6.17301 0 7.54755 0 8.99983C0 10.4521 0.347727 11.8266 0.957273 13.0416L3.96409 10.7098Z" fill="#FBBC05"/>
+                        <path d="M8.99976 3.57955C10.3211 3.57955 11.5075 4.03364 12.4402 4.92545L15.0216 2.34409C13.4629 0.891818 11.4257 0 8.99976 0C5.48158 0 2.43794 2.01682 0.957031 4.95818L3.96385 7.29C4.67158 5.16273 6.65567 3.57955 8.99976 3.57955Z" fill="#EA4335"/>
+                    </svg>
+                    Continue with Google
+                </button>
             </form>
 
             <div class="auth-footer">
@@ -900,6 +913,7 @@
                 else if (i + 1 === currentStep) item.classList.add('active');
             });
 
+            // Fixed progress bar calculation for 3 steps
             const progress = ((currentStep - 1) / (totalSteps - 1)) * 50;
             document.getElementById('progressLine').style.width = progress + '%';
 
@@ -935,7 +949,6 @@
                 email: document.getElementById('signupEmail').value,
                 password: document.getElementById('signupPassword').value,
                 phone: document.getElementById('phone').value,
-                role: document.getElementById('role').value,
                 department: document.getElementById('department').value,
                 position: document.getElementById('position').value
             };
